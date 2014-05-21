@@ -41,3 +41,9 @@
     (doseq [sql (read-sql (io/resource f))]
       (exec-raw (get-connection db) [sql])))
   nil)
+
+(defmacro swap
+  [m k f]
+  `(if-not (nil? (get ~m ~k))
+     (assoc ~m ~k (~f (get ~m ~k)))
+     ~m))
