@@ -9,9 +9,8 @@
    :test-connection-on-checkin true
    :idle-connection-test-period 300})
 
-(def ^:private db-option
-  {:extra {"useUnicode" true
-           "characterEncoding" "utf8"}})
+(def ^:private db-unicode-option {"useUnicode" true
+                                  "characterEncoding" "utf8"})
 
 (defmacro definit
   [name params & body]
@@ -22,13 +21,14 @@
        nil)))
 
 (defn db-config
-  [{:keys [user password host db]}]
+  [{:keys [user password host db extra]}]
   (merge {:user user
           :password password
           :host host
           :db db}
           db-test-connection
-          db-option))
+          {:extra (merge db-unicode-option
+                         extra)}))
 
 (defn- read-sql
   [f]
@@ -42,9 +42,7 @@
       (exec-raw (get-connection db) [sql])))
   nil)
 
-;;;
 ;;; Utility
-;;;
 
 (defmacro swap
   [m k f]
