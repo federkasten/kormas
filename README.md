@@ -4,7 +4,7 @@ Utility functions for Korma (A Clojure Library for Tasty SQL)
 
 ## Usage
 
-```clj
+```clojure
 (definit db-init
   [user password]
 
