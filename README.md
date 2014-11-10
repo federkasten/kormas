@@ -1,6 +1,6 @@
 # kormas
 
-Utility functions for Korma (A Clojure Library for Tasty SQL)
+Utility functions for [Korma (A Clojure Library for Tasty SQL)][korma]
 
 ## Usage
 
@@ -36,5 +36,6 @@ Copyright 2014 [Takashi AOKI][tak.sh]
 
 Licensed under the [Apache License, Version 2.0][apache-license-2.0].
 
+[korma]: http://sqlkorma.com/
 [tak.sh]: http://tak.sh
 [apache-license-2.0]: http://www.apache.org/licenses/LICENSE-2.0.html
