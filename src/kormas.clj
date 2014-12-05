@@ -21,10 +21,11 @@
        nil)))
 
 (defn db-config
-  [{:keys [user password host db extra]}]
+  [{:keys [user password host port db extra]}]
   (merge {:user user
           :password password
           :host host
+          :port port
           :db db}
           db-test-connection
           {:extra (merge db-unicode-option
