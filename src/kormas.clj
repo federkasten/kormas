@@ -21,7 +21,10 @@
        nil)))
 
 (defn db-config
-  [{:keys [user password host port db extra]}]
+  [{:keys [user password host port db extra]
+    :or {password ""
+         host "localhost"
+         port 3306}}]
   (merge {:user user
           :password password
           :host host
