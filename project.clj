@@ -5,7 +5,7 @@
             :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [korma "0.4.0"]
-                 [mysql/mysql-connector-java "5.1.34"]
+                 [mysql/mysql-connector-java "5.1.35"]
                  [log4j "1.2.17" :exclusions [javax.mail/mail
                                               javax.jms/jms
                                               com.sun.jdmk/jmxtools

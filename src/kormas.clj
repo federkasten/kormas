@@ -21,7 +21,7 @@
        nil)))
 
 (defn db-config
-  [{:keys [user password host port db extra]
+  [{:keys [user password host port db properties]
     :or {password ""
          host "localhost"
          port 3306}}]
@@ -31,8 +31,8 @@
           :port port
           :db db}
           db-test-connection
-          {:extra (merge db-unicode-option
-                         extra)}))
+          {:properties (merge db-unicode-option
+                              properties)}))
 
 (defn- read-sql
   [f]
