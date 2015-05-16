@@ -27,7 +27,7 @@ This library is WIP.
                        :db "mydb"})))
 
   ;; entities
-  (defentity sam
+  (defentity myuser
     (database main-db)
     (prepare (fn [v]
                (-> v
@@ -36,9 +36,7 @@ This library is WIP.
     (transform (fn [v]
                  (-> v
                      (swap :status str)
-                     (swap :enable #(if % 0 1))))))
-
-  )
+                     (swap :enable #(if % 0 1)))))))
 ```
 
 ## License
