@@ -21,10 +21,10 @@ This library is WIP.
 
   ;; db
   (defdb main-db
-    (mysql (db-config {:user user
-                       :password password
-                       :host "localhost"
-                       :db "mydb"})))
+    (mysql (mysql-db-config {:user user
+                             :password password
+                             :host "localhost"
+                             :db "mydb"})))
 
   ;; entities
   (defentity myuser
