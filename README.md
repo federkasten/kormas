@@ -2,7 +2,18 @@
 
 Utility functions for [Korma (A Clojure Library for Tasty SQL)][korma]
 
+This library is WIP.
+
+```
+[kormas "0.1.0-SNAPSHOT"]
+```
+
 ## Usage
+
+```clojure
+(require '[kormas.core :refer [definit]])
+(require '[kormas.util :refer [swap transform-key]])
+```
 
 ```clojure
 (definit db-init
@@ -32,7 +43,7 @@ Utility functions for [Korma (A Clojure Library for Tasty SQL)][korma]
 
 ## License
 
-Copyright 2014 [Takashi AOKI][tak.sh]
+Copyright [Takashi AOKI][tak.sh]
 
 Licensed under the [Apache License, Version 2.0][apache-license-2.0].
 
