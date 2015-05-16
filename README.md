@@ -11,7 +11,7 @@ This library is WIP.
 ## Usage
 
 ```clojure
-(require '[kormas.core :refer [definit]])
+(require '[kormas.core :refer [definit mysql-db-config]])
 (require '[kormas.util :refer [swap transform-key]])
 ```
 

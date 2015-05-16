@@ -5,8 +5,8 @@
    :test-connection-on-checkin true
    :idle-connection-test-period 300})
 
-(def ^:private db-unicode-option {"useUnicode" true
-                                  "characterEncoding" "utf8"})
+(def ^:private mysql-db-unicode-option {"useUnicode" true
+                                        "characterEncoding" "utf8"})
 
 (defmacro definit
   [name params & body]
@@ -16,7 +16,7 @@
          ~@body)
        nil)))
 
-(defn db-config
+(defn mysql-db-config
   [{:keys [user password host port db]
     :or {password ""
          host "localhost"
@@ -27,4 +27,4 @@
           :port port
           :db db}
          db-test-connection
-         db-unicode-option))
+         mysql-db-unicode-option))
