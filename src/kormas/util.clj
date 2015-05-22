@@ -13,3 +13,8 @@
         (assoc new-k (k v))
         (dissoc k))
     v))
+
+(defn generated-key
+  [result-of-insert]
+  (or (:GENERATED_KEY result-of-insert)
+      (:generated_key result-of-insert)))
