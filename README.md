@@ -2,10 +2,8 @@
 
 Utility functions for [Korma (A Clojure Library for Tasty SQL)][korma]
 
-This library is WIP.
-
 ```
-[kormas "0.1.0-SNAPSHOT"]
+[kormas "0.1.0"]
 ```
 
 ## Usage
