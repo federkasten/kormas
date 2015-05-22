@@ -1,4 +1,4 @@
-(defproject kormas "0.1.0"
+(defproject kormas "0.1.1-SNAPSHOT"
   :description "Utility functions for Korma (A Clojure Library for Tasty SQL)"
   :url "https://github.com/federkasten/kormas"
   :license {:name "Apache License, Version 2.0"
