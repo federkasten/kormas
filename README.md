@@ -3,7 +3,7 @@
 Utility functions for [Korma (A Clojure Library for Tasty SQL)][korma]
 
 ```
-[kormas "0.1.0"]
+[kormas "0.1.1"]
 ```
 
 ## Usage
