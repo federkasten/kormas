@@ -1,4 +1,5 @@
 (ns kormas.sql
+  (:refer-clojure :exclude [update])
   (:require [clojure.java.io :as io]
             [clojure.string :as string]
             (korma [core :refer :all]
